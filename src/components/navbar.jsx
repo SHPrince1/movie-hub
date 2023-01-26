@@ -19,21 +19,21 @@ function ColorSchemesExample() {
       <Navbar bg="dark" expand="lg" className={style.navBox}>
         <Container>
           <Navbar.Brand href="/" className={style.linkHead}>
-            MoviesHubs
+           CountriesHub
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/" className={style.linkText}>
-                <FaPhotoVideo /> Movies
+                <FaPhotoVideo /> All Countries
               </Nav.Link>
               <Nav.Link href="/trendings" className={style.linkText}>
                 {" "}
-                <FaHotjar /> Trandings
+                <FaHotjar /> Africa
               </Nav.Link>
               <Nav.Link href="/tvseries" className={style.linkText}>
                 {" "}
-                <SlScreenDesktop /> TV-Series
+                <SlScreenDesktop /> Euroupe
               </Nav.Link>
               <Nav.Link href="/search" className={style.linkText}>
                 {" "}

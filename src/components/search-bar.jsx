@@ -1,53 +1,76 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment, useEffect } from "react";
 import { Container } from "react-bootstrap";
-import List from "../components/list";
 import style from "../styles/searchbar.module.css";
+import Cards from "../components/cards";
+import axios from 'axios';
 
 const SearchBar = () => {
   const [userInput, setUserInput] = useState("");
-  const [list, setList] = useState([
-    "walk the dog",
-    "buy the milk",
-    "learn some code",
-  ]);
+  const [apiData, setApiData] = useState([]);
+  const [data, setData] = useState([]);
+  const [show, setShow] = useState(false);
+ 
+  const options = {
+    method: 'GET',
+    url: 'https://restcountries.com/v3.1/region/africa',
+  };
+
+  useEffect(() => {
+    axios.request(options).then(function (response) {
+    setApiData(response.data);
+  }).catch(function (error) {
+    console.error(error);
+  });
+  },[])
 
   // userinput is controlled by the App component
   const handleChange = (e) => {
     setUserInput(e.target.value);
   };
 
-  const addItem = (e) => {
-    if (userInput !== "") {
-      setList([...list, userInput]);
-      setUserInput("");
-    }
-  };
+  const handleSubmit = () => {
+   const newData = apiData.filter(e => e?.name?.common?.toLowerCase() === userInput?.toLowerCase());
+   setData(newData);
+   setShow(true);
+  }
 
-  const removeItem = (item) => {
-    const updatedList = list.filter((listItem) => listItem !== item);
-    setList(updatedList);
-  };
+  useEffect(() => {
+    console.log("User Input:::", userInput);
+    if(userInput === ''){
+      setShow(false);
+    }
+  }, [show, userInput]);
+
+  
 
   return (
     <Container>
       <Fragment>
-        <List list={list} removeItem={removeItem} />
         <hr />
-        <form>
+        
           <div className={style.searchArea}> 
             <input
               placeholder="Search Movies"
               value={userInput}
               onChange={handleChange}
             />
-            <button type="button" onClick={addItem}>
-              {"Search"}
-            </button>
+            <input className={style.search} type="submit" onClick={handleSubmit} value='Search' />
+              
           </div>
-        </form>
+        
+
+        <div className={style.cardBox}>
+              {show && data.map((item, index) => (
+                <Cards key={index} img={item.flags?.png} title={item.name?.common} />
+              ))}
+
+              
+            </div>
       </Fragment>
     </Container>
   );
 };
 
+
 export default SearchBar;
+

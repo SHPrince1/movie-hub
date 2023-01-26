@@ -28,10 +28,25 @@
     margin: 40px 0px;
     padding: 0 20px;
 }
+.cusBtn{
+    background-color: #212529 !important;
+    width:140px;
+    height: 40px;
+    font-weight: bolder !important;
+    font-size: 16px !important;
+}
+
 .btnBox{
+   
     display: flex;
-    gap: 20px;
+    gap: 10px;
     padding: 0 12px;
+}
+.btnsBox{
+    margin-top:30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .filter{
     background-color:#1976d2;
@@ -50,6 +65,7 @@
     border-radius: 5px;
     border: 1px solid #08b059;
 }
+
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .cardParentBox{
