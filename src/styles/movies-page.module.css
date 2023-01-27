@@ -65,6 +65,21 @@
     border-radius: 5px;
     border: 1px solid #08b059;
 }
+/* pagination style */
+.paginateBox{
+border: 1px solid red;
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 5rem;
+font-size: 2rem;
+gap: 10px;
+}
+.paginateBox nextLabel{
+    background-color:#08b059;
+}
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
@@ -94,6 +109,8 @@
     margin-top: -20px;
 }
 
+
+ 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
     .cardBox{
        
