@@ -21,7 +21,7 @@ const SearchBar = () => {
   }).catch(function (error) {
     console.error(error);
   });
-  },[])
+  },)
 
   // userinput is controlled by the App component
   const handleChange = (e) => {

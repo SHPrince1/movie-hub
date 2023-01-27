@@ -19,7 +19,7 @@ const MoviesPage = () => {
   }).catch(function (error) {
     console.error(error);
   });
-  },[])
+  },)
 
 
   return (

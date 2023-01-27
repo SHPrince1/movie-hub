@@ -11,7 +11,7 @@ const Cards = (props) => {
         <img
         className={style.imgElem}
             src={props.img} 
-            alt="new"
+            alt="country name"
           />
         </div>
         <div className={style.cardsTit}>

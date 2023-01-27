@@ -6,7 +6,6 @@ import ColorSchemesExample from "./components/navbar";
 // import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Index from "./pages/index";
-import MoviesPage from "./pages/movies";
 import TrendingsPage from "./components/trendings-page";
 import TvSeriesPage from "./components/tvseries-page";
 import SearchBar from "./components/search-bar";
