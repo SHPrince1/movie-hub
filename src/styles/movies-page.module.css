@@ -80,6 +80,12 @@
     font-size: 21px;
     margin-top: 27px;
 }
+.previous{
+    border: 1px solid red;
+    width: 122px;
+    height: 49px;
+    padding: 5px 2px;
+    text-decoration: none;}
 .pagination{
     /* border: 10px solid red !important; */
     margin-bottom: 4rem;
@@ -130,7 +136,17 @@
 .selectBox{
     margin-top: -20px;
 }
-
+.paginated{
+    display: flex;
+    gap: 2px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-size: 21px;
+    margin-left: -31px;
+    margin-top: 27px;
+}
 
  
 @media only screen and (min-width: 320px) and (max-width: 425px) {
