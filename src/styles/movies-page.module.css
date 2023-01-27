@@ -67,14 +67,14 @@
 }
 /* pagination style */
 .paginateBox{
-border: 1px solid red;
-list-style: none;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 5rem;
-font-size: 2rem;
-gap: 10px;
+    border: 1px solid red;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-size: 21px;
+    margin-top: 27px;
 }
 .paginateBox nextLabel{
     background-color:#08b059;
@@ -86,6 +86,7 @@ gap: 10px;
     .cardParentBox{
         padding: 1px;
         margin: -7px;
+        /* background-color: #08b059; */
     }
     .cardBox{
        

@@ -118,11 +118,11 @@ const TvSeries = () => {
             <div className={style.paginateBox}>
               <ReactPaginate
                 breakLabel="..."
-                nextLabel="next>>"
+                nextLabel="next"
                 onPageChange={handlePageClick}
                 pageRangeDisplayed={5}
                 pageCount={pageCount}
-                previousLabel="<<previous"
+                previousLabel="previous"
                 renderOnZeroPageCount={null}
                 containerClassName="pagination"
                 pageLinkClassName="page-num"
