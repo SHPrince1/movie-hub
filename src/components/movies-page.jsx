@@ -11,7 +11,7 @@ const MoviesPage = () => {
 
   const options = {
     method: 'GET',
-    url: 'https://restcountries.com/v3.1/region/africa',
+    url: 'https://restcountries.com/v3.1/all',
   };
 
   useEffect(() => {axios.request(options).then(function (response) {
