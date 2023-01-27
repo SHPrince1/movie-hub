@@ -125,7 +125,7 @@ const MoviesPage = () => {
           </div>
         </div>
         <div className={style.paginateBox}>
-        <ReactPaginate
+        <ReactPaginate className={style.paginated}
           breakLabel="..."
           nextLabel="next>>"
           onPageChange={handlePageClick}

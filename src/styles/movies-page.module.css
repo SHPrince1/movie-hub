@@ -66,15 +66,36 @@
     border: 1px solid #08b059;
 }
 /* pagination style */
-.paginateBox{
-    border: 1px solid red;
-    list-style: none;
+
+
+.paginated{
+
+    /* border: 10px solid red !important; */
     display: flex;
+    gap: 20px;
+    list-style: none;
     justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
     font-size: 21px;
     margin-top: 27px;
+}
+.pagination{
+    /* border: 10px solid red !important; */
+    margin-bottom: 4rem;
+    font-size: 21px;
+    margin-top: 27px;
+}
+.paginated .page-num{
+    padding:8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.pagination .page-num :hover{
+    background-color: red !important ;
+    color: #fff;
 }
 .paginateBox nextLabel{
     background-color:#08b059;
