@@ -5,6 +5,7 @@ import { Container, Button } from "react-bootstrap";
 import Cards from "../components/cards";
 
 import style from "../styles/movies-page.module.css";
+import styled from "../styles/paginate.module.css";
 
 const TrendingsPage = () => {
   const [trendings, setTrendings] = useState([]);
@@ -115,8 +116,8 @@ const TrendingsPage = () => {
                 ))}
             </div>
 
-            <div className={style.paginateBox}>
-              <ReactPaginate
+            <div className={styled.paginateBox}>
+              <ReactPaginate className={styled.paginated}
                 breakLabel="..."
                 nextLabel="next>>"
                 onPageChange={handlePageClick}

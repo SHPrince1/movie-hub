@@ -1,0 +1,72 @@
+.paginated{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-size: 21px;
+    margin-left: -31px;
+    margin-top: 27px;
+    /* background-color:#08b059; */
+    /* width: 300px; */
+}
+.paginated a {background-color: #fff;
+    text-decoration: none;
+width: 100px;
+height: 100px;
+padding: 10px 10px;
+border-radius: 20px;
+
+margin-left: 0;
+}
+ /* .paginated a:hover {background-color: blue;
+    text-decoration: none;
+width: 130px;
+height: 50px;
+padding: 10px 10px;
+border-radius: 20px;
+margin-left: 0;
+} */
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+    .cardBox{
+       
+        /* border: 2px solid blue; */
+        flex-wrap:wrap;
+        /* width: 350px; */
+        width: fit-content;
+        /* padding: 20px; */
+        /* margin: -14px; */
+    }
+    .btnsBox{
+        display: none;
+        margin-top:30px;
+       
+    }
+    .btnBox{
+   
+        display: none;
+        gap: 10px;
+        padding: 0 12px;
+    }
+    .paginated{
+    display: flex;
+    gap: 1px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-size: 21px;
+    margin-left: -31px;
+    margin-top: 27px;
+}
+.paginated a {background-color: #fff;
+    text-decoration: none;
+width: 50px;
+height: 50px;
+padding: 5px; 
+border-radius: 20px;
+
+
+margin: 0 auto;}
+}

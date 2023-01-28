@@ -5,6 +5,7 @@ import { Button, Container } from "react-bootstrap";
 import Cards from "../components/cards";
 
 import style from "../styles/movies-page.module.css";
+import styled from "../styles/paginate.module.css";
 
 // DATA
 
@@ -116,7 +117,7 @@ const TvSeries = () => {
                 ))}
             </div>
             <div className={style.paginateBox}>
-              <ReactPaginate
+              <ReactPaginate className={styled.paginated}
                 breakLabel="..."
                 nextLabel="next"
                 onPageChange={handlePageClick}

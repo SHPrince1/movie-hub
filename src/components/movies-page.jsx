@@ -3,6 +3,7 @@ import axios from "axios";
 import ReactPaginate from "react-paginate";
 import { Container, Button } from "react-bootstrap";
 import style from "../styles/movies-page.module.css";
+import styled from "../styles/paginate.module.css";
 import Cards from "./cards";
 
 const MoviesPage = () => {
@@ -124,9 +125,9 @@ const MoviesPage = () => {
             </div>
           </div>
         </div>
-        <div className={style.paginateBox}>
+        <div className={styled.paginateBox}>
           <ReactPaginate
-            className={style.paginated}
+            className={styled.paginated}
             breakLabel="........."
             nextLabel="Next"
             onPageChange={handlePageClick}
