@@ -71,13 +71,34 @@
     margin-left: -31px;
     margin-top: 27px;
 }
-.paginated a {background-color: #fff;
+
+.paginated a {
+    background-color: #252525;
     text-decoration: none;
-width: 50px;
-height: 50px;
-padding: 5px; 
-border-radius: 20px;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+ .paginated a:hover {
+    background-color: green;
+    color: #000;
+    text-decoration: none;
+    width: 130px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 
-
-margin: 0 auto;}
 }
