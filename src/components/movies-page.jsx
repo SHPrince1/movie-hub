@@ -125,21 +125,21 @@ const MoviesPage = () => {
           </div>
         </div>
         <div className={style.paginateBox}>
-        <ReactPaginate className={style.paginated}
-          breakLabel="..."
-          nextLabel="next>>"
-          onPageChange={handlePageClick}
-          pageRangeDisplayed={5}
-          pageCount={pageCount}
-          previousLabel="<<previous"
-          renderOnZeroPageCount={null}
-          containerClassName="pagination"
-          pageLinkClassName="page-num"
-          nextLinkClassName="page-num"
-          activeLinkClassName="active"
-        />
+          <ReactPaginate
+            className={style.paginated}
+            breakLabel="........."
+            nextLabel="Next"
+            onPageChange={handlePageClick}
+            pageRangeDisplayed={5}
+            pageCount={pageCount}
+            previousLabel="Prev"
+            renderOnZeroPageCount={null}
+            containerClassName="pagination"
+            pageLinkClassName="page-num"
+            nextLinkClassName="page-num"
+            activeLinkClassName="active"
+          />
         </div>
-       
       </Container>
     </div>
   );
